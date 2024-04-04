@@ -10,7 +10,7 @@ const Header = () => {
           YOUR CULINARY COMPASS : DISH DISCOVERY
         </h3>
       </div>
-      <div className="sectiona h-[40px] z-40 w-full bg-white pt-3 top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between">
+      <div className="sectiona fixed h-[40px] z-40 w-full bg-white pt-3 top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between">
         <img src={dish} className="w-[5vw] h-[7vh]" alt="" />
         <div className="flex gap-6">
           <Link to={"/"} href="" className="hover:underline">

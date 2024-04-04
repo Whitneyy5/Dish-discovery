@@ -6,7 +6,7 @@ import linked from "../assets/linked.png";
 
 const Footer = () => {
   return <div>
-    <div className="flex justify-start font-serif text-[#636363] pt-3 bg-white list-none w-full py-12 gap-3 pt-6">
+    <div className="flex justify-start font-serif text-[#636363] bg-white list-none w-full py-12 gap-3 pt-6">
         <div className="ml-[5%]">
           <h1>Dish Discovery</h1>
           <li>About</li>
@@ -48,7 +48,7 @@ const Footer = () => {
     </div>
      <div className="flex gap-4 ml-[10%]">
           <a className=" rounded-full bg-[#663056]">
-            <img className="rounded-full bg-[#663056]" src={twitter} alt="" />
+            <img src={twitter} alt="" />
           </a>
           <a>
             <img src={insta} alt="" />
