@@ -1,32 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import dish from "../assets/dish.png";
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
+// import { IoIosArrowForward } from "react-icons/io";
 
 const Header = () => {
+  const [hideSloganBox, setHideSloganBox] = useState(true);
   return (
     <div>
-      <div className="font-consulsans bg-[#663056] font-medium text-[#f8f8ff] h-[2.2rem] pt-1">
-        <h3 className="text-center justify-center ">
-          YOUR CULINARY COMPASS : DISH DISCOVERY
-        </h3>
-      </div>
-      <div className="sectiona fixed h-[40px] z-40 w-full bg-white pt-3 top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between">
+      {/* header section */}
+
+      {hideSloganBox && (
+        <div className="font-consulsans relative bg-[#663056] font-medium text-[#f8f8ff] flex p-2 justify-center">
+          <h3 className="text-center justify-center ">
+            <span> YOUR CULINARY COMPASS : DISH DISCOVERY</span>
+          </h3>
+          <div className="flex items-center gap-[1rem] absolute right-5">
+            <div>
+              <Link to={"login"} href="" className="ml-[1rem]">
+                LOGIN/
+              </Link>
+
+              <Link to={"signup"} href="" className="">
+                SIGNUP
+              </Link>
+            </div>
+            <IoMdClose
+              onClick={() => setHideSloganBox(false)}
+              fontSize={20}
+              className="cursor-pointer"
+            />
+          </div>
+        </div>
+      )}
+      {/* end of header section */}
+
+      {/* nav bar section */}
+
+      <div className="sectiona h-[40px] z-40 w-full bg-white pt-3 top-0 flex items-center text-[#001712] px-[7vw] py-2 justify-between">
         <img src={dish} className="w-[5vw] h-[7vh]" alt="" />
         <div className="flex gap-6">
           <Link to={"/"} href="" className="hover:underline">
-            <a>HOME</a>
+            HOME
           </Link>
-          <Link to={"About"} href="" className="hover:underline">
-            <a>ABOUT</a>
+          <Link to={"about"} href="" className="hover:underline">
+            ABOUT
           </Link>
-          <Link to={"Recipe"} href="" className="hover:underline">
-            <a>RECIPE</a>
+          <Link to={"recipes"} href="" className="hover:underline">
+            RECIPES
           </Link>
-          <Link to={"Shop"} href="" className="hover:underline">
-            <a>SHOP</a>
+          <Link to={"shop"} href="" className="hover:underline">
+            SHOP
           </Link>
         </div>
       </div>
+      {/* end of nav bar section */}
     </div>
   );
 };

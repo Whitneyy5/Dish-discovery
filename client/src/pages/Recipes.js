@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const About = () => {
+const Recipes = () => {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Recipes;
