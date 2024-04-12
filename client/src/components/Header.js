@@ -14,7 +14,7 @@ const Header = () => {
       {hideSloganBox && (
         <div className="font-consulsans relative bg-[#663056] font-medium text-[#f8f8ff] flex p-2 justify-center">
           <h3 className="text-center justify-center ">
-            <span> YOUR CULINARY COMPASS : DISH DISCOVERY</span>
+            <span> DISH DISCOVERY : YOUR CULINARY COMPASS</span>
           </h3>
           <div className="flex items-center gap-[1rem] absolute right-5">
             <div>
@@ -44,7 +44,7 @@ const Header = () => {
           <Link
             to={"/"}
             href=""
-            className="hover:underline decoration-[#663056] decoration-2"
+            className="hover:underline decoration-[#663056]  decoration-2"
           >
             <h6>HOME</h6>
           </Link>
