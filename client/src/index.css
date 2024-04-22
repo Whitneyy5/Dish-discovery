@@ -11,3 +11,8 @@ h5,
 h6 {
   font-family: "Arvo", serif;
 }
+
+#background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/assets/signup.webp");
+}

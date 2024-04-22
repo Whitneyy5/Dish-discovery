@@ -11,6 +11,7 @@ import INSTANTPOT from "../assets/instant pot3.webp";
 import VEGAN from "../assets/vegan4.jpg";
 import MEALPREP from "../assets/vegan2.jpg";
 import SOUPS from "../assets/instant pot.webp";
+import RECIPES from "../assets/recipess.png";
 import { IoSearch } from "react-icons/io5";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
           ~EVERYDAY RECIPES MADE FOR YOU~
         </h3>
       </section>
+      {/* images section */}
       <section className="bg-[#F7F7F7]">
         <div className="py-8 overflow-hidden max-w-[69rem] mx-auto ">
           {/* 4 images start */}
@@ -167,6 +169,28 @@ const Home = () => {
           </div>
 
           {/* end of search recipes section */}
+        </div>
+      </section>
+      {/* end of images section */}
+
+      <section>
+        <div className="flex justify-center bg-[#605f5f] text-start  gap-8">
+          <div>
+            <img src={RECIPES} className="w-[30rem] h-[20rem]" alt="" />
+          </div>
+
+          <div className="text-white max-w-[30rem] py-10">
+            <h2 className="text-center text-[#edb654] text-2xl italic py-5">
+              Get It Now
+            </h2>
+            <h2 className="tracking-wider font-bold text-2xl pb-5">
+              DISH DISCOVERY COOKBOOK
+            </h2>
+            <h3 className="tracking-wide text-lg">
+              This cookbook includes our most popular 25 recipes in a beautiful,
+              easy to download format.
+            </h3>
+          </div>
         </div>
       </section>
       <Footer />
