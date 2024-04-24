@@ -69,7 +69,7 @@ const Header = () => {
           >
             <h6>SHOP</h6>
           </Link>
-          <IoSearch className="size-6 text-[#663056]" />
+          <IoSearch className="size-6 text-[#663056] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 ..." />
         </div>
       </div>
       <hr />
