@@ -12,6 +12,10 @@ import VEGAN from "../assets/vegan4.jpg";
 import MEALPREP from "../assets/vegan2.jpg";
 import SOUPS from "../assets/instant pot.webp";
 import RECIPES from "../assets/recipess.png";
+import AKARA from "../assets/akara.jpg";
+import EGUSI from "../assets/egusi.jpg";
+import STEW from "../assets/stew.jpg";
+import RICE from "../assets/jrice.jpg";
 import { IoSearch } from "react-icons/io5";
 
 const Home = () => {
@@ -193,6 +197,48 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* small square images */}
+      <section className="bg-[#F7F7F7]">
+        <div className=" max-w-[69rem] mx-auto ">
+          <div className="flex justify-center py-10">
+            <h3 className="border-0 bg-gray-200 tracking-widest font-semibold text-lg w-[20rem] h-16 flex justify-center items-center cursor-pointer hover:bg-[#663056] hover:text-white">
+              NIGERIAN RECIPES
+            </h3>
+          </div>
+
+          <div className="gap-4 w-full grid grid-cols-4">
+            <div className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer">
+              <img src={AKARA} className="h-[20rem] object-cover " alt="" />
+              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold">
+                AKARA AND PAP
+              </h3>
+            </div>
+
+            <div className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer">
+              <img src={EGUSI} className="h-[20rem] object-cover " alt="" />
+              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold">
+                EGUSI
+              </h3>
+            </div>
+
+            <div className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer">
+              <img src={STEW} className="h-[20rem] object-cover " alt="" />
+              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold">
+                BEEF STEW
+              </h3>
+            </div>
+
+            <div className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer">
+              <img src={RICE} className="h-[20rem] object-cover " alt="" />
+              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold">
+                JOLLOF RICE
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end of small square images */}
       <Footer />
     </div>
   );
