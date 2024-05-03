@@ -17,6 +17,7 @@ import EGUSI from "../assets/egusi.jpg";
 import STEW from "../assets/stew.jpg";
 import RICE from "../assets/jrice.jpg";
 import { IoSearch } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -229,12 +230,16 @@ const Home = () => {
               </h3>
             </div>
 
-            <div className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer">
+            <Link
+              to={"/jollofrice"}
+              className="relative grid place-items-center hover:opacity-60 transition-all duration-300 cursor-pointer"
+            >
               <img src={RICE} className="h-[20rem] object-cover " alt="" />
-              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold">
-                JOLLOF RICE
+
+              <h3 className=" absolute -bottom-3.5 border-0 bg-[#edb654] text-white py-2 w-fit px-6 text-[0.7rem] tracking-[0.15em] font-semibold ">
+                <Link to={"/jollofrice"}>JOLLOF RICE</Link>
               </h3>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

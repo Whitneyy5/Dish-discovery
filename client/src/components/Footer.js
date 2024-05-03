@@ -7,7 +7,7 @@ import linked from "../assets/linked.png";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-start font-serif text-[#636363] bg-white list-none w-full py-12 gap-3 ">
+      <div className="flex justify-start font-serif pt-[10rem] text-[#636363] bg-white list-none w-full py-12 gap-3 ">
         <div className="ml-[5%]">
           <h1>Dish Discovery</h1>
           <li>About</li>
@@ -33,7 +33,7 @@ const Footer = () => {
           <h3 className=" flex justify-center">
             Get a free ECookbook with our top 25 recipes
           </h3>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-baseline">
             <form className="flex justify-center items-center pt-5 gap-4">
               <div>
                 <input
@@ -49,10 +49,12 @@ const Footer = () => {
                   className="flex border border-[#9DA39F] h-10 px-2 py-3 items-start "
                 />
               </div>
+              <div>
+                <h3 className="border-0 bg-[#edb654] h-10 w-10 flex justify-center items-center ">
+                  GO
+                </h3>
+              </div>
             </form>
-            <div>
-              <h3 className="border-0 bg-[#edb654] h-10 w-10 ">GO</h3>
-            </div>
           </div>
         </div>
       </div>
